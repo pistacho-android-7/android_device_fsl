@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 	crda					\
 	regulatory.bin				\
 	uim-sysfs					\
+	UART-Test					\
+	Firefox						\
+	BluetoothLeGatt		\
+	CMFileManager			\
 
 #FREESCALE_EXTENDED
 PRODUCT_PACKAGES += freescale-extended 		\
