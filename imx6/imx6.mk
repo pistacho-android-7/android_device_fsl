@@ -59,6 +59,8 @@ PRODUCT_PACKAGES += \
 	Firefox						\
 	BluetoothLeGatt		\
 	CMFileManager			\
+	i2ctools					\
+	picocom						\
 
 #FREESCALE_EXTENDED
 PRODUCT_PACKAGES += freescale-extended 		\
