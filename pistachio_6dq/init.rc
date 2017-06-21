@@ -74,7 +74,7 @@ on boot
 
     # Tweak the mmc device read ahead buffer size
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
-    write /sys/block/mmcblk1/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk2/queue/read_ahead_kb 2048
 
     # ALSA mixer naming define
     setprop alsa.mixer.playback.master Playback
@@ -138,10 +138,6 @@ on boot
     # Chmod/chown FSL specific sys entry
     chown system system /sys/class/backlight/pwm-backlight/brightness
     chmod 0660 /sys/class/backlight/pwm-backlight/brightness
-
-    # Set light sensor sysfs path and light sensor threshold lux value
-    setprop ro.hardware.lightsensor "/sys/class/i2c-dev/i2c-2/device/2-0044/"
-    setprop ro.lightsensor.threshold  20
 
     # No bluetooth hardware present
     setprop wlan.interface wlan0
@@ -223,17 +219,6 @@ service p2p_supplicant /system/bin/wpa_supplicant \
     disabled
     oneshot
 
-# magd daemon
-service magd /system/bin/magd
-    class late_start
-    seclabel u:r:sensors:s0
-    user system
-    group input
-    oneshot
-
-service charger /charger
-    class charger
-
 service dhcpcd_wlan0 /system/bin/dhcpcd -aABDKL
     class main
     disabled
@@ -265,11 +250,6 @@ service iprenew_p2p /system/bin/dhcpcd -n
     oneshot
 
 service iprenew_eth0 /system/bin/dhcpcd -n eth0
-    class main
-    disabled
-    oneshot
-
-service iprenew_bt-pan /system/bin/dhcpcd -n bt-pan
     class main
     disabled
     oneshot
