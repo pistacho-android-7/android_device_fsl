@@ -62,6 +62,7 @@ PRODUCT_PACKAGES += \
 	i2c-tools					\
 	can-utils					\
 	picocom						\
+	Termux						\
 
 #FREESCALE_EXTENDED
 PRODUCT_PACKAGES += freescale-extended 		\
