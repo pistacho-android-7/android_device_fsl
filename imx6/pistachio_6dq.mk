@@ -50,6 +50,11 @@ PRODUCT_COPY_FILES +=	\
 	device/fsl/pistachio_6dq/common/wifi/wg7833/p2p_supplicant_advance_overlay.conf:system/etc/firmware/ti-connectivity/p2p_supplicant_advance_overlay.conf 	\
 	device/fsl/pistachio_6dq/common/wifi/wg7833/p2p_supplicant_overlay.conf:system/etc/firmware/ti-connectivity/p2p_supplicant_overlay.conf 	\
 
+
+# nutsboard files
+PRODUCT_COPY_FILES += \
+	device/fsl/pistachio_6dq/common/init/nb_init:system/bin/nb_init \
+
 # UI
 PRODUCT_COPY_FILES +=	\
 	device/fsl/pistachio_6dq/common/ui/bootanimation.zip:system/media/bootanimation.zip \

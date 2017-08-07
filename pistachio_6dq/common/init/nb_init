@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+#####################
+# CAN BUS INIT
+#####################
+ip link set can0 type can bitrate 60000
+ifconfig can0 up
+####################

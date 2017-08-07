@@ -279,6 +279,10 @@ service pppd_gprs /etc/ppp/init.gprs-pppd
     disabled
     oneshot
 
+service nb_init /system/bin/nb_init start
+    class late_start
+    oneshot
+
 on fs
 # mount ext4 partitions
     mount_all /fstab.freescale
