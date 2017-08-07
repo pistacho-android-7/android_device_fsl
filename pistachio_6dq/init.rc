@@ -87,6 +87,27 @@ on boot
     setprop wifi.interface wlan0
     setprop wifi.ap.interface wlan0
 
+    #edm framework external gpio
+    chown root system /sys/class/edm/gpio/GPIO_5V1/direction
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V1/direction
+    chown root system /sys/class/edm/gpio/GPIO_5V1/value
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V1/value
+
+    chown root system /sys/class/edm/gpio/GPIO_5V2/direction
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V2/direction
+    chown root system /sys/class/edm/gpio/GPIO_5V2/value
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V2/value
+
+    chown root system /sys/class/edm/gpio/GPIO_5V3/direction
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V3/direction
+    chown root system /sys/class/edm/gpio/GPIO_5V3/value
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V3/value
+
+    chown root system /sys/class/edm/gpio/GPIO_5V4/direction
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V4/direction
+    chown root system /sys/class/edm/gpio/GPIO_5V4/value
+    chmod 0666 /sys/class/edm/gpio/GPIO_5V4/value
+
     # change permissions for Bluetooth/FM/GPS
     chmod 0660 /dev/ttymxc4
     chown bluetooth bluetooth /dev/ttymxc4
