@@ -113,7 +113,13 @@ on boot
     chown bluetooth bluetooth /dev/ttymxc4
 
     # set uart
-    chmod 777 /dev/mxctty0
+    chown root system /dev/ttymxc0
+    chmod 0666 /dev/ttymxc0
+    chown root system /dev/ttymxc1
+    chmod 0666 /dev/ttymxc1
+    chown root system /dev/ttymxc2
+    chmod 0666 /dev/ttymxc2
+
 
     # Prepare for RIL
     setprop gsm.ril.delay 15
