@@ -60,6 +60,7 @@ PRODUCT_COPY_FILES +=	\
 	device/fsl/pistachio_6dq/common/ui/bootanimation.zip:system/media/bootanimation.zip \
 	device/fsl/pistachio_6dq/common/ui/toolbox:recovery/root/sbin/toolbox \
 	device/fsl/pistachio_6dq/common/ui/busybox:recovery/root/sbin/busybox \
+	device/fsl/pistachio_6dq/common/ui/busybox:system/xbin/busybox \
 
 # GPU files
 
