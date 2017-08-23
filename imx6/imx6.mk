@@ -16,7 +16,6 @@ PRODUCT_PACKAGES += \
 	Camera					\
         LegacyCamera                            \
 	Email					\
-	FSLOta					\
 	CactusPlayer                            \
 	WfdSink                                 \
 	wfd                                     \
@@ -323,7 +322,6 @@ PRODUCT_COPY_FILES +=	\
 	device/fsl/imx6/etc/init.usb.rc:root/init.freescale.usb.rc \
 	device/fsl/imx6/etc/ueventd.freescale.rc:root/ueventd.freescale.rc \
 	device/fsl/imx6/etc/ppp/init.gprs-pppd:system/etc/ppp/init.gprs-pppd \
-	device/fsl/imx6/etc/ota.conf:system/etc/ota.conf \
         device/fsl/imx6/init.recovery.freescale.rc:root/init.recovery.freescale.rc \
     device/fsl-proprietary/media-profile/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     device/fsl-proprietary/media-profile/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
