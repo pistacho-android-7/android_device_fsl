@@ -1,7 +1,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
 $(call inherit-product, $(TOPDIR)frameworks/base/data/sounds/AllAudio.mk)
-$(call inherit-product, packages/apps/Supersu/vendor.mk)
 # overrides
 PRODUCT_BRAND := Freescale
 PRODUCT_MANUFACTURER := Freescale
