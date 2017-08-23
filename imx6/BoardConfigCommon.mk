@@ -70,6 +70,16 @@ endif
 # use non-neon memory copy on mx6x to get better performance
 ARCH_ARM_USE_NON_NEON_MEMCPY := true
 
+# TWRP
+TW_THEME := landscape_hdpi
+RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
+TW_NO_SCREEN_TIMEOUT := true
+TW_NO_REBOOT_BOOTLOADER := true
+
+# Time Zone data for TWRP
+PRODUCT_COPY_FILES += \
+    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
+
 # for kernel/user space split
 # comment out for 1g/3g space split
 # TARGET_KERNEL_2G := true

@@ -12,13 +12,5 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
-# BUILD_ID is usually used to specify the branch name
-# (like "MAIN") or a branch name and a release candidate
-# (like "CRB01").  It must be a single word, and is
-# capitalized by convention.
-
-export BUILD_ID=1.0.0-ga-rc10
-export BUILD_NUMBER=20170630
 
 PRODUCT_COPY_FILES += device/fsl/imx6/twrp.fstab:recovery/root/etc/twrp.fstab
