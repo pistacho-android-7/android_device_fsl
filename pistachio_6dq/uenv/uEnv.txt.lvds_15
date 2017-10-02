@@ -1,0 +1,1 @@
+console=ttymxc3,115200 init=/init androidboot.console=ttymxc3 ldo_active=on quiet androidboot.hardware=freescale vmalloc=300M androidboot.selinux=permissive consoleblank=0 cma=300M video=mxcfb0:dev=ldb,1366x768@60,if=RGB24,bpp=32 video=mxcfb1:off androidboot.dm_verity=disabled
