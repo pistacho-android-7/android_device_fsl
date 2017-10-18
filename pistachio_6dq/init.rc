@@ -281,9 +281,10 @@ service hostapd_bin /system/bin/hostapd -d /data/misc/wifi/hostapd.conf
     oneshot
     disabled
 
-service nb_init /system/bin/nb_init start
-    class late_start
+service nbinit /system/bin/sh /system/bin/nbinit
+    class core
     oneshot
+    seclabel u:r:nbinit:s0
 
 on fs
 # mount ext4 partitions

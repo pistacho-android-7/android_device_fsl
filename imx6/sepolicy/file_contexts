@@ -30,3 +30,4 @@
 
 /dev/hci_tty                    u:object_r:hci_attach_dev:s0
 /system/bin/uim-sysfs           u:object_r:hci_attach_exec:s0
+/system/bin/nbinit              u:object_r:nbinit_exec:s0

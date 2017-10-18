@@ -53,7 +53,7 @@ PRODUCT_COPY_FILES +=	\
 
 # nutsboard files
 PRODUCT_COPY_FILES += \
-	device/fsl/pistachio_6dq/common/init/nb_init:system/bin/nb_init \
+	device/fsl/pistachio_6dq/common/init/nbinit:system/bin/nbinit \
 
 # UI
 PRODUCT_COPY_FILES +=	\
